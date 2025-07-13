@@ -1,0 +1,4 @@
+name: DisableInventories
+version: '1.0-SNAPSHOT'
+main: io.github.tn_potato.disableInventories.DisableInventories
+api-version: '1.21'
