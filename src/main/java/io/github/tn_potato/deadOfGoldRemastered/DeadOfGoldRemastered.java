@@ -1,4 +1,4 @@
-package io.github.tn_potato.disableInventories;
+package io.github.tn_potato.deadOfGoldRemastered;
 
 import net.kyori.adventure.key.Key;
 import net.kyori.adventure.sound.Sound;
@@ -7,15 +7,21 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryType;
+import org.bukkit.event.player.PlayerDropItemEvent;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class DisableInventories extends JavaPlugin implements Listener {
+public class DeadOfGoldRemastered extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
         // プラグイン起動時にイベントリスナーを登録
         Bukkit.getPluginManager().registerEvents(this, this);
+    }
+
+    @EventHandler
+    public void onItemDrop(PlayerDropItemEvent event) {
+        event.setCancelled(true);
     }
 
     @EventHandler

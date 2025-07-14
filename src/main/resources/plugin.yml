@@ -1,4 +1,4 @@
-name: DisableInventories
+name: DeadOfGoldRemastered
 version: '1.0-SNAPSHOT'
-main: io.github.tn_potato.disableInventories.DisableInventories
+main: io.github.tn_potato.deadOfGoldRemastered.DeadOfGoldRemastered
 api-version: '1.21'
